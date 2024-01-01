@@ -3,7 +3,8 @@
   --color-dark: #495057;
   --color-medium: #ced4da;
   --color-light: #f1f3f5;
-
+  --color-wrong: #e61616;
+  --color-wrong-border: #7f0101;
   --color-theme: #1098ad;
   --color-accent: #ffa94d;
 }
@@ -38,10 +39,12 @@ body {
 
 .main {
   width: 50rem;
+  margin: auto;
 }
 
 .app-header {
   width: 66rem;
+  margin: auto;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
@@ -87,6 +90,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10rem;
 }
 
 .progress {
@@ -130,6 +134,7 @@ progress {
 
 .btn:not([disabled]):hover {
   background-color: var(--color-darkest);
+  color: #f1f3f5;
 }
 
 .btn-option:not([disabled]):hover {
@@ -164,7 +169,7 @@ progress {
 .btn-option.wrong {
   background-color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
+  color: var(--color-light);
 }
 
 .answer {
